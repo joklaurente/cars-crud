@@ -1,0 +1,4 @@
+<button><a href="cars/create/">Add a new record </a></button>
+{% for car in car_list %}
+    <p><a href="/cars/{{ car.id }}">{{car}} - {{car.color}}</a></p>
+{% endfor %}
